@@ -16,7 +16,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<EquipmentDbContext>(options =>
 {
-    options.UseSqlite("Data Source=.\\Database\\equipment.db"); // Replace with your connection string
+    options.UseSqlite("Data Source=.\\Database\\equipment.db"); // Connection string
 });
 
 
