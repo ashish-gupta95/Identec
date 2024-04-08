@@ -1,9 +1,17 @@
 ﻿namespace Identec.Model
 {
-    public class Equipment
+    public class BaseEquipment
     {
         public int Id { get; set; }
+        public string Status { get; set; }
+    }
+    public class Equipment : BaseEquipment
+    {
         public string Name { get; set; }
-        public string  Status { get; set; }
+
+    }
+
+    public class EquipmentRequestModel : BaseEquipment
+    {
     }
 }
